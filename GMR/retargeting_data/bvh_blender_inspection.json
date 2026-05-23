@@ -1,0 +1,1022 @@
+[
+  {
+    "file": "E:\\T800\\date\\zhiquan_quanji_001.bvh",
+    "armature": "zhiquan_quanji_001",
+    "frame_start": 1,
+    "frame_end": 2829,
+    "fps": 120,
+    "bone_count": 60,
+    "root_bones": [
+      "Hips"
+    ],
+    "key_bones": {
+      "root": "Hips",
+      "left_hand": "LeftHand",
+      "right_hand": "RightHand",
+      "left_foot": "LeftFoot",
+      "right_foot": "RightFoot",
+      "left_shoulder": "LeftShoulder",
+      "right_shoulder": "RightShoulder",
+      "left_elbow": "LeftForeArm",
+      "right_elbow": "RightForeArm",
+      "left_knee": "LeftLeg",
+      "right_knee": "RightLeg"
+    },
+    "bone_names": [
+      "Hips",
+      "Spine",
+      "Spine1",
+      "Spine2",
+      "Spine3",
+      "Neck",
+      "Neck1",
+      "Head",
+      "RightShoulder",
+      "RightArm",
+      "RightForeArm",
+      "RightHand",
+      "RightHandMiddle1",
+      "RightHandMiddle2",
+      "RightHandMiddle3",
+      "RightHandRing",
+      "RightHandRing1",
+      "RightHandRing2",
+      "RightHandRing3",
+      "RightHandPinky",
+      "RightHandPinky1",
+      "RightHandPinky2",
+      "RightHandPinky3",
+      "RightHandIndex",
+      "RightHandIndex1",
+      "RightHandIndex2",
+      "RightHandIndex3",
+      "RightHandThumb1",
+      "RightHandThumb2",
+      "RightHandThumb3",
+      "LeftShoulder",
+      "LeftArm",
+      "LeftForeArm",
+      "LeftHand",
+      "LeftHandMiddle1",
+      "LeftHandMiddle2",
+      "LeftHandMiddle3",
+      "LeftHandRing",
+      "LeftHandRing1",
+      "LeftHandRing2",
+      "LeftHandRing3",
+      "LeftHandPinky",
+      "LeftHandPinky1",
+      "LeftHandPinky2",
+      "LeftHandPinky3",
+      "LeftHandIndex",
+      "LeftHandIndex1",
+      "LeftHandIndex2",
+      "LeftHandIndex3",
+      "LeftHandThumb1",
+      "LeftHandThumb2",
+      "LeftHandThumb3",
+      "RightUpLeg",
+      "RightLeg",
+      "RightFoot",
+      "RightToeBase",
+      "LeftUpLeg",
+      "LeftLeg",
+      "LeftFoot",
+      "LeftToeBase"
+    ],
+    "parent_map": {
+      "Hips": null,
+      "Spine": "Hips",
+      "Spine1": "Spine",
+      "Spine2": "Spine1",
+      "Spine3": "Spine2",
+      "Neck": "Spine3",
+      "Neck1": "Neck",
+      "Head": "Neck1",
+      "RightShoulder": "Spine3",
+      "RightArm": "RightShoulder",
+      "RightForeArm": "RightArm",
+      "RightHand": "RightForeArm",
+      "RightHandMiddle1": "RightHand",
+      "RightHandMiddle2": "RightHandMiddle1",
+      "RightHandMiddle3": "RightHandMiddle2",
+      "RightHandRing": "RightHand",
+      "RightHandRing1": "RightHandRing",
+      "RightHandRing2": "RightHandRing1",
+      "RightHandRing3": "RightHandRing2",
+      "RightHandPinky": "RightHandRing",
+      "RightHandPinky1": "RightHandPinky",
+      "RightHandPinky2": "RightHandPinky1",
+      "RightHandPinky3": "RightHandPinky2",
+      "RightHandIndex": "RightHand",
+      "RightHandIndex1": "RightHandIndex",
+      "RightHandIndex2": "RightHandIndex1",
+      "RightHandIndex3": "RightHandIndex2",
+      "RightHandThumb1": "RightHandIndex",
+      "RightHandThumb2": "RightHandThumb1",
+      "RightHandThumb3": "RightHandThumb2",
+      "LeftShoulder": "Spine3",
+      "LeftArm": "LeftShoulder",
+      "LeftForeArm": "LeftArm",
+      "LeftHand": "LeftForeArm",
+      "LeftHandMiddle1": "LeftHand",
+      "LeftHandMiddle2": "LeftHandMiddle1",
+      "LeftHandMiddle3": "LeftHandMiddle2",
+      "LeftHandRing": "LeftHand",
+      "LeftHandRing1": "LeftHandRing",
+      "LeftHandRing2": "LeftHandRing1",
+      "LeftHandRing3": "LeftHandRing2",
+      "LeftHandPinky": "LeftHandRing",
+      "LeftHandPinky1": "LeftHandPinky",
+      "LeftHandPinky2": "LeftHandPinky1",
+      "LeftHandPinky3": "LeftHandPinky2",
+      "LeftHandIndex": "LeftHand",
+      "LeftHandIndex1": "LeftHandIndex",
+      "LeftHandIndex2": "LeftHandIndex1",
+      "LeftHandIndex3": "LeftHandIndex2",
+      "LeftHandThumb1": "LeftHandIndex",
+      "LeftHandThumb2": "LeftHandThumb1",
+      "LeftHandThumb3": "LeftHandThumb2",
+      "RightUpLeg": "Hips",
+      "RightLeg": "RightUpLeg",
+      "RightFoot": "RightLeg",
+      "RightToeBase": "RightFoot",
+      "LeftUpLeg": "Hips",
+      "LeftLeg": "LeftUpLeg",
+      "LeftFoot": "LeftLeg",
+      "LeftToeBase": "LeftFoot"
+    },
+    "samples": {
+      "1": {
+        "root": {
+          "bone": "Hips",
+          "world_pos": [
+            1.500903,
+            24.219305,
+            34.799896
+          ]
+        },
+        "left_hand": {
+          "bone": "LeftHand",
+          "world_pos": [
+            27.85405,
+            26.348169,
+            57.336029
+          ]
+        },
+        "right_hand": {
+          "bone": "RightHand",
+          "world_pos": [
+            -25.113785,
+            22.029037,
+            57.033527
+          ]
+        },
+        "left_foot": {
+          "bone": "LeftFoot",
+          "world_pos": [
+            7.562097,
+            27.522541,
+            3.263232
+          ]
+        },
+        "right_foot": {
+          "bone": "RightFoot",
+          "world_pos": [
+            -4.569266,
+            27.368073,
+            3.122018
+          ]
+        },
+        "left_shoulder": {
+          "bone": "LeftShoulder",
+          "world_pos": [
+            1.113903,
+            27.073317,
+            53.155651
+          ]
+        },
+        "right_shoulder": {
+          "bone": "RightShoulder",
+          "world_pos": [
+            1.113903,
+            27.073317,
+            53.155651
+          ]
+        },
+        "left_elbow": {
+          "bone": "LeftForeArm",
+          "world_pos": [
+            18.992008,
+            26.935188,
+            56.272511
+          ]
+        },
+        "right_elbow": {
+          "bone": "RightForeArm",
+          "world_pos": [
+            -16.661598,
+            24.785942,
+            56.047905
+          ]
+        },
+        "left_knee": {
+          "bone": "LeftLeg",
+          "world_pos": [
+            6.664653,
+            25.264122,
+            18.889681
+          ]
+        },
+        "right_knee": {
+          "bone": "RightLeg",
+          "world_pos": [
+            -3.601996,
+            25.554062,
+            18.802116
+          ]
+        }
+      },
+      "101": {
+        "root": {
+          "bone": "Hips",
+          "world_pos": [
+            1.494903,
+            24.222206,
+            34.803596
+          ]
+        },
+        "left_hand": {
+          "bone": "LeftHand",
+          "world_pos": [
+            27.889072,
+            25.986301,
+            57.403378
+          ]
+        },
+        "right_hand": {
+          "bone": "RightHand",
+          "world_pos": [
+            -24.935318,
+            21.48838,
+            57.137115
+          ]
+        },
+        "left_foot": {
+          "bone": "LeftFoot",
+          "world_pos": [
+            7.56005,
+            27.512703,
+            3.269077
+          ]
+        },
+        "right_foot": {
+          "bone": "RightFoot",
+          "world_pos": [
+            -4.565424,
+            27.36149,
+            3.124557
+          ]
+        },
+        "left_shoulder": {
+          "bone": "LeftShoulder",
+          "world_pos": [
+            1.169412,
+            27.012079,
+            53.170937
+          ]
+        },
+        "right_shoulder": {
+          "bone": "RightShoulder",
+          "world_pos": [
+            1.169412,
+            27.012079,
+            53.170937
+          ]
+        },
+        "left_elbow": {
+          "bone": "LeftForeArm",
+          "world_pos": [
+            19.040817,
+            26.715267,
+            56.313244
+          ]
+        },
+        "right_elbow": {
+          "bone": "RightForeArm",
+          "world_pos": [
+            -16.549713,
+            24.437181,
+            56.138298
+          ]
+        },
+        "left_knee": {
+          "bone": "LeftLeg",
+          "world_pos": [
+            6.662916,
+            25.20237,
+            18.887949
+          ]
+        },
+        "right_knee": {
+          "bone": "RightLeg",
+          "world_pos": [
+            -3.60283,
+            25.594196,
+            18.810276
+          ]
+        }
+      },
+      "1415": {
+        "root": {
+          "bone": "Hips",
+          "world_pos": [
+            8.662302,
+            2.987004,
+            26.294397
+          ]
+        },
+        "left_hand": {
+          "bone": "LeftHand",
+          "world_pos": [
+            5.084444,
+            -22.801151,
+            47.906948
+          ]
+        },
+        "right_hand": {
+          "bone": "RightHand",
+          "world_pos": [
+            -2.828463,
+            -0.992762,
+            48.022327
+          ]
+        },
+        "left_foot": {
+          "bone": "LeftFoot",
+          "world_pos": [
+            21.174236,
+            -18.27693,
+            4.524883
+          ]
+        },
+        "right_foot": {
+          "bone": "RightFoot",
+          "world_pos": [
+            -5.028817,
+            16.110018,
+            3.373777
+          ]
+        },
+        "left_shoulder": {
+          "bone": "LeftShoulder",
+          "world_pos": [
+            8.497211,
+            -1.941263,
+            43.694363
+          ]
+        },
+        "right_shoulder": {
+          "bone": "RightShoulder",
+          "world_pos": [
+            8.497211,
+            -1.941263,
+            43.694363
+          ]
+        },
+        "left_elbow": {
+          "bone": "LeftForeArm",
+          "world_pos": [
+            12.585482,
+            -19.204241,
+            44.619385
+          ]
+        },
+        "right_elbow": {
+          "bone": "RightForeArm",
+          "world_pos": [
+            -4.884798,
+            6.787401,
+            44.116951
+          ]
+        },
+        "left_knee": {
+          "bone": "LeftLeg",
+          "world_pos": [
+            11.323652,
+            -13.080581,
+            15.752336
+          ]
+        },
+        "right_knee": {
+          "bone": "RightLeg",
+          "world_pos": [
+            -3.505154,
+            5.01182,
+            14.536222
+          ]
+        }
+      },
+      "2829": {
+        "root": {
+          "bone": "Hips",
+          "world_pos": [
+            -0.231997,
+            4.687705,
+            34.066299
+          ]
+        },
+        "left_hand": {
+          "bone": "LeftHand",
+          "world_pos": [
+            12.25312,
+            0.26271,
+            35.100842
+          ]
+        },
+        "right_hand": {
+          "bone": "RightHand",
+          "world_pos": [
+            -9.206916,
+            12.406549,
+            32.801208
+          ]
+        },
+        "left_foot": {
+          "bone": "LeftFoot",
+          "world_pos": [
+            8.636683,
+            14.095348,
+            4.251175
+          ]
+        },
+        "right_foot": {
+          "bone": "RightFoot",
+          "world_pos": [
+            -7.474885,
+            0.815045,
+            3.217033
+          ]
+        },
+        "left_shoulder": {
+          "bone": "LeftShoulder",
+          "world_pos": [
+            0.216956,
+            5.389944,
+            52.515015
+          ]
+        },
+        "right_shoulder": {
+          "bone": "RightShoulder",
+          "world_pos": [
+            0.216956,
+            5.389944,
+            52.515015
+          ]
+        },
+        "left_elbow": {
+          "bone": "LeftForeArm",
+          "world_pos": [
+            11.84915,
+            3.753325,
+            43.326645
+          ]
+        },
+        "right_elbow": {
+          "bone": "RightForeArm",
+          "world_pos": [
+            -8.152487,
+            11.473026,
+            41.634563
+          ]
+        },
+        "left_knee": {
+          "bone": "LeftLeg",
+          "world_pos": [
+            6.150628,
+            6.63985,
+            17.974396
+          ]
+        },
+        "right_knee": {
+          "bone": "RightLeg",
+          "world_pos": [
+            -6.119264,
+            2.196181,
+            18.912462
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "E:\\T800\\date\\540huixuantitui_001.bvh",
+    "armature": "540huixuantitui_001",
+    "frame_start": 1,
+    "frame_end": 3921,
+    "fps": 120,
+    "bone_count": 60,
+    "root_bones": [
+      "Hips"
+    ],
+    "key_bones": {
+      "root": "Hips",
+      "left_hand": "LeftHand",
+      "right_hand": "RightHand",
+      "left_foot": "LeftFoot",
+      "right_foot": "RightFoot",
+      "left_shoulder": "LeftShoulder",
+      "right_shoulder": "RightShoulder",
+      "left_elbow": "LeftForeArm",
+      "right_elbow": "RightForeArm",
+      "left_knee": "LeftLeg",
+      "right_knee": "RightLeg"
+    },
+    "bone_names": [
+      "Hips",
+      "Spine",
+      "Spine1",
+      "Spine2",
+      "Spine3",
+      "Neck",
+      "Neck1",
+      "Head",
+      "RightShoulder",
+      "RightArm",
+      "RightForeArm",
+      "RightHand",
+      "RightHandMiddle1",
+      "RightHandMiddle2",
+      "RightHandMiddle3",
+      "RightHandRing",
+      "RightHandRing1",
+      "RightHandRing2",
+      "RightHandRing3",
+      "RightHandPinky",
+      "RightHandPinky1",
+      "RightHandPinky2",
+      "RightHandPinky3",
+      "RightHandIndex",
+      "RightHandIndex1",
+      "RightHandIndex2",
+      "RightHandIndex3",
+      "RightHandThumb1",
+      "RightHandThumb2",
+      "RightHandThumb3",
+      "LeftShoulder",
+      "LeftArm",
+      "LeftForeArm",
+      "LeftHand",
+      "LeftHandMiddle1",
+      "LeftHandMiddle2",
+      "LeftHandMiddle3",
+      "LeftHandRing",
+      "LeftHandRing1",
+      "LeftHandRing2",
+      "LeftHandRing3",
+      "LeftHandPinky",
+      "LeftHandPinky1",
+      "LeftHandPinky2",
+      "LeftHandPinky3",
+      "LeftHandIndex",
+      "LeftHandIndex1",
+      "LeftHandIndex2",
+      "LeftHandIndex3",
+      "LeftHandThumb1",
+      "LeftHandThumb2",
+      "LeftHandThumb3",
+      "RightUpLeg",
+      "RightLeg",
+      "RightFoot",
+      "RightToeBase",
+      "LeftUpLeg",
+      "LeftLeg",
+      "LeftFoot",
+      "LeftToeBase"
+    ],
+    "parent_map": {
+      "Hips": null,
+      "Spine": "Hips",
+      "Spine1": "Spine",
+      "Spine2": "Spine1",
+      "Spine3": "Spine2",
+      "Neck": "Spine3",
+      "Neck1": "Neck",
+      "Head": "Neck1",
+      "RightShoulder": "Spine3",
+      "RightArm": "RightShoulder",
+      "RightForeArm": "RightArm",
+      "RightHand": "RightForeArm",
+      "RightHandMiddle1": "RightHand",
+      "RightHandMiddle2": "RightHandMiddle1",
+      "RightHandMiddle3": "RightHandMiddle2",
+      "RightHandRing": "RightHand",
+      "RightHandRing1": "RightHandRing",
+      "RightHandRing2": "RightHandRing1",
+      "RightHandRing3": "RightHandRing2",
+      "RightHandPinky": "RightHandRing",
+      "RightHandPinky1": "RightHandPinky",
+      "RightHandPinky2": "RightHandPinky1",
+      "RightHandPinky3": "RightHandPinky2",
+      "RightHandIndex": "RightHand",
+      "RightHandIndex1": "RightHandIndex",
+      "RightHandIndex2": "RightHandIndex1",
+      "RightHandIndex3": "RightHandIndex2",
+      "RightHandThumb1": "RightHandIndex",
+      "RightHandThumb2": "RightHandThumb1",
+      "RightHandThumb3": "RightHandThumb2",
+      "LeftShoulder": "Spine3",
+      "LeftArm": "LeftShoulder",
+      "LeftForeArm": "LeftArm",
+      "LeftHand": "LeftForeArm",
+      "LeftHandMiddle1": "LeftHand",
+      "LeftHandMiddle2": "LeftHandMiddle1",
+      "LeftHandMiddle3": "LeftHandMiddle2",
+      "LeftHandRing": "LeftHand",
+      "LeftHandRing1": "LeftHandRing",
+      "LeftHandRing2": "LeftHandRing1",
+      "LeftHandRing3": "LeftHandRing2",
+      "LeftHandPinky": "LeftHandRing",
+      "LeftHandPinky1": "LeftHandPinky",
+      "LeftHandPinky2": "LeftHandPinky1",
+      "LeftHandPinky3": "LeftHandPinky2",
+      "LeftHandIndex": "LeftHand",
+      "LeftHandIndex1": "LeftHandIndex",
+      "LeftHandIndex2": "LeftHandIndex1",
+      "LeftHandIndex3": "LeftHandIndex2",
+      "LeftHandThumb1": "LeftHandIndex",
+      "LeftHandThumb2": "LeftHandThumb1",
+      "LeftHandThumb3": "LeftHandThumb2",
+      "RightUpLeg": "Hips",
+      "RightLeg": "RightUpLeg",
+      "RightFoot": "RightLeg",
+      "RightToeBase": "RightFoot",
+      "LeftUpLeg": "Hips",
+      "LeftLeg": "LeftUpLeg",
+      "LeftFoot": "LeftLeg",
+      "LeftToeBase": "LeftFoot"
+    },
+    "samples": {
+      "1": {
+        "root": {
+          "bone": "Hips",
+          "world_pos": [
+            2.446803,
+            107.886711,
+            34.812485
+          ]
+        },
+        "left_hand": {
+          "bone": "LeftHand",
+          "world_pos": [
+            28.813625,
+            109.049156,
+            56.968845
+          ]
+        },
+        "right_hand": {
+          "bone": "RightHand",
+          "world_pos": [
+            -24.074017,
+            106.643456,
+            56.989357
+          ]
+        },
+        "left_foot": {
+          "bone": "LeftFoot",
+          "world_pos": [
+            9.087049,
+            110.801933,
+            3.33559
+          ]
+        },
+        "right_foot": {
+          "bone": "RightFoot",
+          "world_pos": [
+            -4.360005,
+            111.796371,
+            3.222709
+          ]
+        },
+        "left_shoulder": {
+          "bone": "LeftShoulder",
+          "world_pos": [
+            2.171502,
+            111.428383,
+            53.0341
+          ]
+        },
+        "right_shoulder": {
+          "bone": "RightShoulder",
+          "world_pos": [
+            2.171502,
+            111.428383,
+            53.0341
+          ]
+        },
+        "left_elbow": {
+          "bone": "LeftForeArm",
+          "world_pos": [
+            20.054249,
+            110.493782,
+            55.874424
+          ]
+        },
+        "right_elbow": {
+          "bone": "RightForeArm",
+          "world_pos": [
+            -15.634178,
+            109.352852,
+            55.789486
+          ]
+        },
+        "left_knee": {
+          "bone": "LeftLeg",
+          "world_pos": [
+            7.861573,
+            108.626656,
+            18.951546
+          ]
+        },
+        "right_knee": {
+          "bone": "RightLeg",
+          "world_pos": [
+            -3.040606,
+            109.516273,
+            18.816042
+          ]
+        }
+      },
+      "101": {
+        "root": {
+          "bone": "Hips",
+          "world_pos": [
+            2.447503,
+            107.835304,
+            34.806786
+          ]
+        },
+        "left_hand": {
+          "bone": "LeftHand",
+          "world_pos": [
+            28.753284,
+            108.543411,
+            57.23011
+          ]
+        },
+        "right_hand": {
+          "bone": "RightHand",
+          "world_pos": [
+            -24.034512,
+            106.415276,
+            57.008991
+          ]
+        },
+        "left_foot": {
+          "bone": "LeftFoot",
+          "world_pos": [
+            9.087076,
+            110.803795,
+            3.333514
+          ]
+        },
+        "right_foot": {
+          "bone": "RightFoot",
+          "world_pos": [
+            -4.357664,
+            111.794228,
+            3.225687
+          ]
+        },
+        "left_shoulder": {
+          "bone": "LeftShoulder",
+          "world_pos": [
+            2.186167,
+            111.353966,
+            53.035488
+          ]
+        },
+        "right_shoulder": {
+          "bone": "RightShoulder",
+          "world_pos": [
+            2.186167,
+            111.353966,
+            53.035488
+          ]
+        },
+        "left_elbow": {
+          "bone": "LeftForeArm",
+          "world_pos": [
+            20.031349,
+            110.123863,
+            56.029522
+          ]
+        },
+        "right_elbow": {
+          "bone": "RightForeArm",
+          "world_pos": [
+            -15.608007,
+            109.146866,
+            55.766468
+          ]
+        },
+        "left_knee": {
+          "bone": "LeftLeg",
+          "world_pos": [
+            7.860523,
+            108.576248,
+            18.942015
+          ]
+        },
+        "right_knee": {
+          "bone": "RightLeg",
+          "world_pos": [
+            -3.040541,
+            109.491737,
+            18.815922
+          ]
+        }
+      },
+      "1961": {
+        "root": {
+          "bone": "Hips",
+          "world_pos": [
+            11.053903,
+            100.732811,
+            32.185184
+          ]
+        },
+        "left_hand": {
+          "bone": "LeftHand",
+          "world_pos": [
+            13.495356,
+            83.037483,
+            48.294804
+          ]
+        },
+        "right_hand": {
+          "bone": "RightHand",
+          "world_pos": [
+            0.782051,
+            95.75695,
+            51.153015
+          ]
+        },
+        "left_foot": {
+          "bone": "LeftFoot",
+          "world_pos": [
+            19.355278,
+            88.159019,
+            3.611955
+          ]
+        },
+        "right_foot": {
+          "bone": "RightFoot",
+          "world_pos": [
+            5.618443,
+            114.035065,
+            3.348229
+          ]
+        },
+        "left_shoulder": {
+          "bone": "LeftShoulder",
+          "world_pos": [
+            12.131763,
+            100.095299,
+            50.566715
+          ]
+        },
+        "right_shoulder": {
+          "bone": "RightShoulder",
+          "world_pos": [
+            12.131763,
+            100.095299,
+            50.566715
+          ]
+        },
+        "left_elbow": {
+          "bone": "LeftForeArm",
+          "world_pos": [
+            19.899971,
+            86.782921,
+            43.298405
+          ]
+        },
+        "right_elbow": {
+          "bone": "RightForeArm",
+          "world_pos": [
+            -1.672378,
+            102.042862,
+            45.281513
+          ]
+        },
+        "left_knee": {
+          "bone": "LeftLeg",
+          "world_pos": [
+            14.410767,
+            88.584305,
+            18.627367
+          ]
+        },
+        "right_knee": {
+          "bone": "RightLeg",
+          "world_pos": [
+            3.783,
+            107.017342,
+            17.400787
+          ]
+        }
+      },
+      "3921": {
+        "root": {
+          "bone": "Hips",
+          "world_pos": [
+            11.128003,
+            -10.127494,
+            34.852299
+          ]
+        },
+        "left_hand": {
+          "bone": "LeftHand",
+          "world_pos": [
+            21.252546,
+            -19.351915,
+            35.443741
+          ]
+        },
+        "right_hand": {
+          "bone": "RightHand",
+          "world_pos": [
+            4.819352,
+            2.286074,
+            35.063717
+          ]
+        },
+        "left_foot": {
+          "bone": "LeftFoot",
+          "world_pos": [
+            13.452241,
+            -14.112192,
+            3.383447
+          ]
+        },
+        "right_foot": {
+          "bone": "RightFoot",
+          "world_pos": [
+            13.476083,
+            1.015442,
+            8.780194
+          ]
+        },
+        "left_shoulder": {
+          "bone": "LeftShoulder",
+          "world_pos": [
+            12.989023,
+            -8.380154,
+            53.066799
+          ]
+        },
+        "right_shoulder": {
+          "bone": "RightShoulder",
+          "world_pos": [
+            12.989023,
+            -8.380154,
+            53.066799
+          ]
+        },
+        "left_elbow": {
+          "bone": "LeftForeArm",
+          "world_pos": [
+            22.527702,
+            -15.883576,
+            43.589661
+          ]
+        },
+        "right_elbow": {
+          "bone": "RightForeArm",
+          "world_pos": [
+            7.504076,
+            1.960165,
+            43.589996
+          ]
+        },
+        "left_knee": {
+          "bone": "LeftLeg",
+          "world_pos": [
+            13.245258,
+            -14.091845,
+            19.196367
+          ]
+        },
+        "right_knee": {
+          "bone": "RightLeg",
+          "world_pos": [
+            5.151585,
+            -7.868577,
+            18.873194
+          ]
+        }
+      }
+    }
+  }
+]
