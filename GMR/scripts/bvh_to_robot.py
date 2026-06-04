@@ -8,6 +8,30 @@ from rich import print
 from tqdm import tqdm
 import os
 import numpy as np
+from scipy.spatial.transform import Rotation as R
+
+
+def limit_root_tilt(
+    qpos,
+    roll_limit_deg,
+    backward_pitch_limit_deg,
+    forward_pitch_limit_deg,
+):
+    limited_qpos = np.asarray(qpos).copy()
+    roll_limit = np.deg2rad(roll_limit_deg)
+    backward_pitch_limit = np.deg2rad(backward_pitch_limit_deg)
+    forward_pitch_limit = np.deg2rad(forward_pitch_limit_deg)
+
+    root_euler = R.from_quat(limited_qpos[3:7], scalar_first=True).as_euler("xyz")
+    root_euler[0] = np.clip(root_euler[0], -roll_limit, roll_limit)
+    root_euler[1] = np.clip(root_euler[1], -backward_pitch_limit, forward_pitch_limit)
+    limited_qpos[3:7] = R.from_euler("xyz", root_euler).as_quat(scalar_first=True)
+    return limited_qpos
+
+
+def update_solver_state(retargeter, qpos):
+    retargeter.configuration.update(qpos)
+
 
 if __name__ == "__main__":
     
@@ -104,6 +128,57 @@ if __name__ == "__main__":
     )
 
     parser.add_argument(
+        "--t800_segment_scale",
+        dest="t800_segment_scale",
+        action="store_true",
+        default=None,
+        help="Rescale Nokov BVH body segments to T800 link lengths before IK.",
+    )
+
+    parser.add_argument(
+        "--no_t800_segment_scale",
+        dest="t800_segment_scale",
+        action="store_false",
+        help="Disable T800-specific Nokov BVH segment scaling.",
+    )
+
+    parser.add_argument(
+        "--t800_root_level",
+        dest="t800_root_level",
+        action="store_true",
+        default=None,
+        help="Limit T800 floating-base roll/pitch drift while preserving heading.",
+    )
+
+    parser.add_argument(
+        "--no_t800_root_level",
+        dest="t800_root_level",
+        action="store_false",
+        help="Disable T800 floating-base roll/pitch limiting.",
+    )
+
+    parser.add_argument(
+        "--t800_root_roll_limit_deg",
+        default=5.0,
+        type=float,
+        help="Maximum absolute T800 root roll angle when root leveling is enabled.",
+    )
+
+    parser.add_argument(
+        "--t800_root_backward_pitch_limit_deg",
+        default=4.0,
+        type=float,
+        help="Maximum T800 root backward pitch angle when root leveling is enabled.",
+    )
+
+    parser.add_argument(
+        "--t800_root_forward_pitch_limit_deg",
+        default=12.0,
+        type=float,
+        help="Maximum T800 root forward pitch angle when root leveling is enabled.",
+    )
+
+    parser.add_argument(
         "--save_path",
         default=None,
         help="Path to save the robot motion.",
@@ -134,13 +209,27 @@ if __name__ == "__main__":
     else:
         offset_to_ground = args.offset_to_ground
 
-    initial_warmup_iters = 0 if args.initial_warmup_iters is None else args.initial_warmup_iters
+    if args.initial_warmup_iters is None:
+        initial_warmup_iters = 15 if args.robot == "t800" and args.format == "nokov" else 0
+    else:
+        initial_warmup_iters = args.initial_warmup_iters
+
+    if args.t800_segment_scale is None:
+        use_t800_segment_scale = args.robot == "t800" and args.format == "nokov"
+    else:
+        use_t800_segment_scale = args.t800_segment_scale
+
+    if args.t800_root_level is None:
+        use_t800_root_level = args.robot == "t800" and args.format == "nokov"
+    else:
+        use_t800_root_level = args.t800_root_level
 
     # Load SMPLX trajectory
     lafan1_data_frames, actual_human_height = load_bvh_file(
         args.bvh_file,
         format=args.format,
         align_to_robot=align_to_robot_frame,
+        t800_segment_scale=use_t800_segment_scale,
     )
     
     
@@ -201,7 +290,15 @@ if __name__ == "__main__":
 
         # retarget
         qpos = retargeter.retarget(smplx_data, offset_to_ground=offset_to_ground)
-        
+
+        if use_t800_root_level:
+            qpos = limit_root_tilt(
+                qpos,
+                args.t800_root_roll_limit_deg,
+                args.t800_root_backward_pitch_limit_deg,
+                args.t800_root_forward_pitch_limit_deg,
+            )
+            update_solver_state(retargeter, qpos)
 
         if args.save_path is not None:
             qpos_list.append(qpos)

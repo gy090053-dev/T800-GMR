@@ -2,11 +2,12 @@
     "robot_root_name": "LINK_BASE",
     "human_root_name": "Hips",
     "ground_height": 0.0,
-    "human_height_assumption": 1.8,
+    "human_height_assumption": 1.75,
     "use_ik_match_table1": true,
     "use_ik_match_table2": false,
-    "posture_cost": 1.0,
+    "posture_cost": 5.0,
     "default_joint_pose": {
+        "J12_TORSO_YAW": 0.0,
         "J03_KNEE_PITCH_L": 0.24,
         "J04_ANKLE_PITCH_L": -0.12,
         "J09_KNEE_PITCH_R": 0.24,
@@ -17,24 +18,24 @@
         "J22_ELBOW_YAW_R": 0.0
     },
     "human_scale_table": {
-        "Hips": 3.0,
-        "Spine2": 1.0,
-        "LeftUpLeg": 3.0,
-        "RightUpLeg": 3.0,
-        "LeftLeg": 3.0,
-        "RightLeg": 3.0,
-        "LeftFootMod": 3.0,
-        "RightFootMod": 3.0,
-        "LeftArm": 1.7,
-        "RightArm": 1.7,
-        "LeftForeArm": 1.7,
-        "RightForeArm": 1.7,
-        "LeftHand": 1.7,
-        "RightHand": 1.7
+        "Hips": 2.9,
+        "Spine3": 1.0,
+        "LeftUpLeg": 1.0,
+        "RightUpLeg": 1.0,
+        "LeftLeg": 1.0,
+        "RightLeg": 1.0,
+        "LeftFootMod": 1.0,
+        "RightFootMod": 1.0,
+        "LeftArm": 1.0,
+        "RightArm": 1.0,
+        "LeftForeArm": 1.0,
+        "RightForeArm": 1.0,
+        "LeftHand": 1.0,
+        "RightHand": 1.0
     },
     "ik_match_table1": {
         "LINK_BASE": ["Hips", 40, 0, [0.0, 0.0, 0.0], [1.0, 0.0, 0.0, 0.0]],
-        "LINK_WAIST_YAW": ["Spine2", 10, 0, [0.0, 0.0, 0.0], [1.0, 0.0, 0.0, 0.0]],
+        "LINK_WAIST_YAW": ["Spine3", 10, 0, [0.0, 0.0, 0.0], [1.0, 0.0, 0.0, 0.0]],
 
         "LINK_HIP_PITCH_L": ["LeftUpLeg", 8, 0, [0.0, 0.0, 0.0], [1.0, 0.0, 0.0, 0.0]],
         "LINK_KNEE_PITCH_L": ["LeftLeg", 25, 0, [0.0, 0.0, 0.0], [1.0, 0.0, 0.0, 0.0]],
@@ -44,11 +45,11 @@
         "LINK_KNEE_PITCH_R": ["RightLeg", 25, 0, [0.0, 0.0, 0.0], [1.0, 0.0, 0.0, 0.0]],
         "LINK_ANKLE_PITCH_R": ["RightFootMod", 80, 0, [0.0, 0.0, 0.0], [1.0, 0.0, 0.0, 0.0]],
 
-        "LINK_SHOULDER_PITCH_L": ["LeftArm", 12, 0, [0.0, 0.0, 0.0], [1.0, 0.0, 0.0, 0.0]],
+        "LINK_SHOULDER_PITCH_L": ["LeftArm", 10, 0, [0.0, 0.0, 0.0], [1.0, 0.0, 0.0, 0.0]],
         "LINK_ELBOW_PITCH_L": ["LeftForeArm", 25, 0, [0.0, 0.0, 0.0], [1.0, 0.0, 0.0, 0.0]],
         "LINK_WRIST_END_L": ["LeftHand", 30, 0, [0.0, 0.0, 0.0], [1.0, 0.0, 0.0, 0.0]],
 
-        "LINK_SHOULDER_PITCH_R": ["RightArm", 12, 0, [0.0, 0.0, 0.0], [1.0, 0.0, 0.0, 0.0]],
+        "LINK_SHOULDER_PITCH_R": ["RightArm", 10, 0, [0.0, 0.0, 0.0], [1.0, 0.0, 0.0, 0.0]],
         "LINK_ELBOW_PITCH_R": ["RightForeArm", 25, 0, [0.0, 0.0, 0.0], [1.0, 0.0, 0.0, 0.0]],
         "LINK_WRIST_END_R": ["RightHand", 30, 0, [0.0, 0.0, 0.0], [1.0, 0.0, 0.0, 0.0]]
     },
